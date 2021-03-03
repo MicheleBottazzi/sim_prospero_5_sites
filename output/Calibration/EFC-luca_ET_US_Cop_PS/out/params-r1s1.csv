@@ -1,0 +1,195 @@
+@S,Parameter
+ round,1
+ step,1
+ step_params,prospero_VPD0 prospero_Tl prospero_T0 prospero_Th prospero_alpha prospero_theta prospero_waterWiltingPoint prospero_waterFieldCapacity
+ calibration_start,Sun Jan 01 00:00:00 CET 2006
+ luca_name,ET-SO_simple_stress_US_Cop_RMSE_Water
+
+@P,prospero_doHourly,true
+
+@P,prospero_doFullPrint,true
+
+@P,prospero_doIterative,false
+
+@P,prospero_useTemperatureStress,true
+
+@P,prospero_useVDPStress,true
+
+@P,prospero_useWaterStress,true
+
+@P,prospero_temporalStep,60
+
+@P,prospero_tStartDate,2006-01-01 00:00
+
+@P,prospero_defaultLeafAreaIndex,0
+
+@P,prospero_typeOfCanopy,multilayer
+
+@P,prospero_elevation,1520
+
+@P,prospero_latitude,38.09
+
+@P,prospero_longitude,-109.39
+
+@P,prospero_canopyHeight,0.2
+
+@P,prospero_defaultStress,1.0
+
+@P,prospero_alpha,0.006092552418893504
+
+@P,prospero_theta,0.7697963622547235
+
+@P,prospero_VPD0,3.073669562330185
+
+@P,prospero_Tl,-2.425099398348088
+
+@P,prospero_T0,19.64980969338346
+
+@P,prospero_Th,40.714480579941295
+
+@P,prospero_waterWiltingPoint,0.12266564611849518
+
+@P,prospero_waterFieldCapacity,0.23813003590280246
+
+@P,prospero_rootsDepth,0.75
+
+@P,prospero_depletionFraction,0.60
+
+@P,readerAirTemperature_file,/home/drugo/simProspero/data/US_Cop/US_Cop_Temp.csv
+
+@P,readerAirTemperature_idfield,val
+
+@P,readerAirTemperature_tStart,2006-01-01 00:00
+
+@P,readerAirTemperature_tEnd,2007-12-31 23:30
+
+@P,readerAirTemperature_tTimestep,60
+
+@P,readerAirTemperature_fileNovalue,-9999.0
+
+@P,readerWindVelocity_file,/home/drugo/simProspero/data/US_Cop/US_Cop_Wind.csv
+
+@P,readerWindVelocity_idfield,val
+
+@P,readerWindVelocity_tStart,2006-01-01 00:00
+
+@P,readerWindVelocity_tEnd,2007-12-31 23:30
+
+@P,readerWindVelocity_tTimestep,60
+
+@P,readerWindVelocity_fileNovalue,-9999.0
+
+@P,readerRelativeHumidity_file,/home/drugo/simProspero/data/US_Cop/US_Cop_RH.csv
+
+@P,readerRelativeHumidity_idfield,val
+
+@P,readerRelativeHumidity_tStart,2006-01-01 00:00
+
+@P,readerRelativeHumidity_tEnd,2007-12-31 23:30
+
+@P,readerRelativeHumidity_tTimestep,60
+
+@P,readerRelativeHumidity_fileNovalue,-9999.0
+
+@P,readerShortWaveDirectRadiation_file,/home/drugo/simProspero/data/US_Cop/US_Cop_SwDirect.csv
+
+@P,readerShortWaveDirectRadiation_idfield,val
+
+@P,readerShortWaveDirectRadiation_tStart,2006-01-01 00:00
+
+@P,readerShortWaveDirectRadiation_tEnd,2007-12-31 23:30
+
+@P,readerShortWaveDirectRadiation_tTimestep,60
+
+@P,readerShortWaveDirectRadiation_fileNovalue,-9999.0
+
+@P,readerShortWaveDiffuseRadiation_file,/home/drugo/simProspero/data/US_Cop/US_Cop_null.csv
+
+@P,readerShortWaveDiffuseRadiation_idfield,val
+
+@P,readerShortWaveDiffuseRadiation_tStart,2006-01-01 00:00
+
+@P,readerShortWaveDiffuseRadiation_tEnd,2007-12-31 23:30
+
+@P,readerShortWaveDiffuseRadiation_tTimestep,60
+
+@P,readerShortWaveDiffuseRadiation_fileNovalue,-9999.0
+
+@P,readerLongWaveRadiation_file,/home/drugo/simProspero/data/US_Cop/US_Cop_LwRad.csv
+
+@P,readerLongWaveRadiation_idfield,val
+
+@P,readerLongWaveRadiation_tStart,2006-01-01 00:00
+
+@P,readerLongWaveRadiation_tEnd,2007-12-31 23:30
+
+@P,readerLongWaveRadiation_tTimestep,60
+
+@P,readerLongWaveRadiation_fileNovalue,-9999.0
+
+@P,readerNetLongWaveRadiation_file,/home/drugo/simProspero/data/US_Cop/US_Cop_Net.csv
+
+@P,readerNetLongWaveRadiation_idfield,val
+
+@P,readerNetLongWaveRadiation_tStart,2006-01-01 00:00
+
+@P,readerNetLongWaveRadiation_tEnd,2007-12-31 23:30
+
+@P,readerNetLongWaveRadiation_tTimestep,60
+
+@P,readerNetLongWaveRadiation_fileNovalue,-9999.0
+
+@P,readerAtmosphericPressure_file,/home/drugo/simProspero/data/US_Cop/US_Cop_Pres.csv
+
+@P,readerAtmosphericPressure_idfield,val
+
+@P,readerAtmosphericPressure_tStart,2006-01-01 00:00
+
+@P,readerAtmosphericPressure_tEnd,2007-12-31 23:30
+
+@P,readerAtmosphericPressure_tTimestep,60
+
+@P,readerAtmosphericPressure_fileNovalue,-9999.0
+
+@P,readerLeafAreaIndex_file,/home/drugo/simProspero/data/US_Cop/US_Cop_LAI.csv
+
+@P,readerLeafAreaIndex_idfield,val
+
+@P,readerLeafAreaIndex_tStart,2006-01-01 00:00
+
+@P,readerLeafAreaIndex_tEnd,2007-12-31 23:30
+
+@P,readerLeafAreaIndex_tTimestep,60
+
+@P,readerLeafAreaIndex_fileNovalue,-9999.0
+
+@P,readerSoilMoisture_file,/home/drugo/simProspero/data/US_Cop/US_Cop_SWC_2.csv
+
+@P,readerSoilMoisture_idfield,val
+
+@P,readerSoilMoisture_tStart,2006-01-01 00:00
+
+@P,readerSoilMoisture_tEnd,2007-12-31 23:30
+
+@P,readerSoilMoisture_tTimestep,60
+
+@P,readerSoilMoisture_fileNovalue,-9999.0
+
+@P,readerSoilHeatFlux_file,/home/drugo/simProspero/data/US_Cop/US_Cop_GHF.csv
+
+@P,readerSoilHeatFlux_idfield,val
+
+@P,readerSoilHeatFlux_tStart,2006-01-01 00:00
+
+@P,readerSoilHeatFlux_tEnd,2007-12-31 23:30
+
+@P,readerSoilHeatFlux_tTimestep,60
+
+@P,readerSoilHeatFlux_fileNovalue,-9999.0
+
+@P,writerTranspiration_file,/home/drugo/simProspero/output/US_Cop/prospero_US_Cop_calib.csv
+
+@P,writerTranspiration_tStart,2006-01-01 00:00
+
+@P,writerTranspiration_tTimestep,60
+

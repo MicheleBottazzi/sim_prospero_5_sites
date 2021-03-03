@@ -1,0 +1,117 @@
+@S,Parameter
+ round,1
+ step,1
+ step_params,penmanMonteithFao_waterWiltingPoint penmanMonteithFao_waterFieldCapacity
+ calibration_start,Fri Feb 18 00:00:00 CET 2000
+ luca_name,EFC-luca_ET_FAO_GL_Zah
+
+@P,penmanMonteithFao_cropCoefficient,0.75
+
+@P,penmanMonteithFao_waterWiltingPoint,0.11999999999999922
+
+@P,penmanMonteithFao_waterFieldCapacity,0.2699999999999996
+
+@P,penmanMonteithFao_rootsDepth,0.75
+
+@P,penmanMonteithFao_depletionFraction,0.60
+
+@P,penmanMonteithFao_tStartDate,2000-02-18 00:00
+
+@P,penmanMonteithFao_temporalStep,30
+
+@P,penmanMonteithFao_defaultAtmosphericPressure,101.3
+
+@P,penmanMonteithFao_doHourly,true
+
+@P,penmanMonteithFao_canopyHeight,0.2
+
+@P,readerAirTemperature_file,/home/drugo/simProspero/data/GL_Zah/GL_Zah_Temp.csv
+
+@P,readerAirTemperature_idfield,val
+
+@P,readerAirTemperature_tStart,2000-02-18 00:00
+
+@P,readerAirTemperature_tEnd,2004-12-31 23:30
+
+@P,readerAirTemperature_tTimestep,30
+
+@P,readerAirTemperature_fileNovalue,-9999.0
+
+@P,readerWindVelocity_file,/home/drugo/simProspero/data/GL_Zah/GL_Zah_Wind.csv
+
+@P,readerWindVelocity_idfield,val
+
+@P,readerWindVelocity_tStart,2000-02-18 00:00
+
+@P,readerWindVelocity_tEnd,2004-12-31 23:30
+
+@P,readerWindVelocity_tTimestep,30
+
+@P,readerWindVelocity_fileNovalue,-9999.0
+
+@P,readerRelativeHumidity_file,/home/drugo/simProspero/data/GL_Zah/GL_Zah_RH.csv
+
+@P,readerRelativeHumidity_idfield,val
+
+@P,readerRelativeHumidity_tStart,2000-02-18 00:00
+
+@P,readerRelativeHumidity_tEnd,2004-12-31 23:30
+
+@P,readerRelativeHumidity_tTimestep,30
+
+@P,readerRelativeHumidity_fileNovalue,-9999.0
+
+@P,readerNetRadiation_file,/home/drugo/simProspero/data/GL_Zah/GL_Zah_Net.csv
+
+@P,readerNetRadiation_idfield,val
+
+@P,readerNetRadiation_tStart,2000-02-18 00:00
+
+@P,readerNetRadiation_tEnd,2004-12-31 23:30
+
+@P,readerNetRadiation_tTimestep,30
+
+@P,readerNetRadiation_fileNovalue,-9999.0
+
+@P,readerAtmosphericPressure_file,/home/drugo/simProspero/data/GL_Zah/GL_Zah_Pres.csv
+
+@P,readerAtmosphericPressure_idfield,val
+
+@P,readerAtmosphericPressure_tStart,2000-02-18 00:00
+
+@P,readerAtmosphericPressure_tEnd,2004-12-31 23:30
+
+@P,readerAtmosphericPressure_tTimestep,30
+
+@P,readerAtmosphericPressure_fileNovalue,-9999.0
+
+@P,readerSoilHeatFlux_file,/home/drugo/simProspero/data/GL_Zah/GL_Zah_GHF.csv
+
+@P,readerSoilHeatFlux_idfield,val
+
+@P,readerSoilHeatFlux_tStart,2000-02-18 00:00
+
+@P,readerSoilHeatFlux_tEnd,2004-12-31 23:30
+
+@P,readerSoilHeatFlux_tTimestep,30
+
+@P,readerSoilHeatFlux_fileNovalue,-9999.0
+
+@P,readerSoilMosture_file,/home/drugo/simProspero/data/GL_Zah/GL_Zah_SWC.csv
+
+@P,readerSoilMosture_idfield,val
+
+@P,readerSoilMosture_tStart,2000-02-18 00:00
+
+@P,readerSoilMosture_tEnd,2004-12-31 23:30
+
+@P,readerSoilMosture_tTimestep,30
+
+@P,readerSoilMosture_fileNovalue,-9999.0
+
+@P,writerLatentHeatFAO_file,/home/drugo/simProspero/output/GL_Zah/GL_Zah_latentHeat_FAO_calib.csv
+
+@P,writerLatentHeatFAO_tStart,2000-02-18 00:00
+
+@P,writerLatentHeatFAO_tTimestep,30
+

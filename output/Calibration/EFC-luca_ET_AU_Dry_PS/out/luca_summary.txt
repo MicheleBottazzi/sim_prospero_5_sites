@@ -1,0 +1,328 @@
+************************************************
+*          Luca Calibration Summary            *
+************************************************
+
+# Rounds = 1
+# Steps = 1
+
+Input Information
+	Model Executable: null
+	Parameter File Name = null
+	prospero.doHourly = true
+	prospero.doFullPrint = true
+	prospero.doIterative = false
+	prospero.useTemperatureStress = false
+	prospero.useVDPStress = false
+	prospero.useWaterStress = true
+	prospero.temporalStep = 30
+	prospero.tStartDate = 2012-01-01 00:00
+	prospero.defaultLeafAreaIndex = 0
+	prospero.typeOfCanopy = multilayer
+	prospero.elevation = 180
+	prospero.latitude = -15.2588
+	prospero.longitude = 132.3706
+	prospero.canopyHeight = 0.2
+	prospero.defaultStress = 1.0
+	prospero.alpha = 0.005
+	prospero.theta = 0.85
+	prospero.VPD0 = 5.0
+	prospero.Tl = 0.0
+	prospero.T0 = 25.0
+	prospero.Th = 50.0
+	prospero.waterWiltingPoint = 0.11
+	prospero.waterFieldCapacity = 0.23
+	prospero.rootsDepth = 0.75
+	prospero.depletionFraction = 0.60
+	readerAirTemperature.file = /home/drugo/simProspero/data/AU_Dry/AU_Dry_Temp.csv
+	readerAirTemperature.idfield = val
+	readerAirTemperature.tStart = 2012-01-01 00:00
+	readerAirTemperature.tEnd = 2014-12-31 23:30
+	readerAirTemperature.tTimestep = 30
+	readerAirTemperature.fileNovalue = -9999.0
+	readerWindVelocity.file = /home/drugo/simProspero/data/AU_Dry/AU_Dry_Wind.csv
+	readerWindVelocity.idfield = val
+	readerWindVelocity.tStart = 2012-01-01 00:00
+	readerWindVelocity.tEnd = 2014-12-31 23:30
+	readerWindVelocity.tTimestep = 30
+	readerWindVelocity.fileNovalue = -9999.0
+	readerRelativeHumidity.file = /home/drugo/simProspero/data/AU_Dry/AU_Dry_RH.csv
+	readerRelativeHumidity.idfield = val
+	readerRelativeHumidity.tStart = 2012-01-01 00:00
+	readerRelativeHumidity.tEnd = 2014-12-31 23:30
+	readerRelativeHumidity.tTimestep = 30
+	readerRelativeHumidity.fileNovalue = -9999.0
+	readerShortWaveDirectRadiation.file = /home/drugo/simProspero/data/AU_Dry/AU_Dry_SwDirect.csv
+	readerShortWaveDirectRadiation.idfield = val
+	readerShortWaveDirectRadiation.tStart = 2012-01-01 00:00
+	readerShortWaveDirectRadiation.tEnd = 2014-12-31 23:30
+	readerShortWaveDirectRadiation.tTimestep = 30
+	readerShortWaveDirectRadiation.fileNovalue = -9999.0
+	readerShortWaveDiffuseRadiation.file = /home/drugo/simProspero/data/AU_Dry/AU_Dry_null.csv
+	readerShortWaveDiffuseRadiation.idfield = val
+	readerShortWaveDiffuseRadiation.tStart = 2012-01-01 00:00
+	readerShortWaveDiffuseRadiation.tEnd = 2014-12-31 23:30
+	readerShortWaveDiffuseRadiation.tTimestep = 30
+	readerShortWaveDiffuseRadiation.fileNovalue = -9999.0
+	readerLongWaveRadiation.file = /home/drugo/simProspero/data/AU_Dry/AU_Dry_LwRad.csv
+	readerLongWaveRadiation.idfield = val
+	readerLongWaveRadiation.tStart = 2012-01-01 00:00
+	readerLongWaveRadiation.tEnd = 2014-12-31 23:30
+	readerLongWaveRadiation.tTimestep = 30
+	readerLongWaveRadiation.fileNovalue = -9999.0
+	readerNetLongWaveRadiation.file = /home/drugo/simProspero/data/AU_Dry/AU_Dry_Net.csv
+	readerNetLongWaveRadiation.idfield = val
+	readerNetLongWaveRadiation.tStart = 2012-01-01 00:00
+	readerNetLongWaveRadiation.tEnd = 2014-12-31 23:30
+	readerNetLongWaveRadiation.tTimestep = 30
+	readerNetLongWaveRadiation.fileNovalue = -9999.0
+	readerAtmosphericPressure.file = /home/drugo/simProspero/data/AU_Dry/AU_Dry_Pres.csv
+	readerAtmosphericPressure.idfield = val
+	readerAtmosphericPressure.tStart = 2012-01-01 00:00
+	readerAtmosphericPressure.tEnd = 2014-12-31 23:30
+	readerAtmosphericPressure.tTimestep = 30
+	readerAtmosphericPressure.fileNovalue = -9999.0
+	readerLeafAreaIndex.file = /home/drugo/simProspero/data/AU_Dry/AU_Dry_LAI.csv
+	readerLeafAreaIndex.idfield = val
+	readerLeafAreaIndex.tStart = 2012-01-01 00:00
+	readerLeafAreaIndex.tEnd = 2014-12-31 23:30
+	readerLeafAreaIndex.tTimestep = 30
+	readerLeafAreaIndex.fileNovalue = -9999.0
+	readerSoilMoisture.file = /home/drugo/simProspero/data/AU_Dry/AU_Dry_SWC.csv
+	readerSoilMoisture.idfield = val
+	readerSoilMoisture.tStart = 2012-01-01 00:00
+	readerSoilMoisture.tEnd = 2014-12-31 23:30
+	readerSoilMoisture.tTimestep = 30
+	readerSoilMoisture.fileNovalue = -9999.0
+	readerSoilHeatFlux.file = /home/drugo/simProspero/data/AU_Dry/AU_Dry_GHF.csv
+	readerSoilHeatFlux.idfield = val
+	readerSoilHeatFlux.tStart = 2012-01-01 00:00
+	readerSoilHeatFlux.tEnd = 2014-12-31 23:30
+	readerSoilHeatFlux.tTimestep = 30
+	readerSoilHeatFlux.fileNovalue = -9999.0
+	writerTranspiration.file = /home/drugo/simProspero/output/AU_Dry/prospero_AU_Dry_calib.csv
+	writerTranspiration.tStart = 2012-01-01 00:00
+	writerTranspiration.tTimestep = 30
+
+Model Run Period  : 	January 01,2012 - December 31,2014
+Calibration Period: 	January 01,2012 - December 31,2014
+
+
+Output Information
+	Output Folder: /home/drugo/simProspero/./output/Calibration/ET-SO_simple_stress_AU_Dry_onlywater2/out
+
+-------------------------------
+Initial Setup for Step 1
+-------------------------------
+
+>>> Parameter Name: prospero_VPD0
+
+  mean  was used for calibration.
+  Lower Bound = 2.0		 Actual Lower Bound 2.0
+  Upper Bound = 8.0		 Actual Upper Bound 8.0
+
+  Parameter Values:
+	#	init value		calibrated?
+	0	5.000000		true
+	Mean	5.0
+	Initial Parameter OF	104.91902217024308
+
+>>> Parameter Name: prospero_Tl
+
+  mean  was used for calibration.
+  Lower Bound = -5.0		 Actual Lower Bound -5.0
+  Upper Bound = 5.0		 Actual Upper Bound 5.0
+
+  Parameter Values:
+	#	init value		calibrated?
+	0	0.000000		true
+	Mean	0.0
+	Initial Parameter OF	104.91902217024308
+
+>>> Parameter Name: prospero_T0
+
+  mean  was used for calibration.
+  Lower Bound = 12.0		 Actual Lower Bound 12.0
+  Upper Bound = 22.0		 Actual Upper Bound 22.0
+
+  Parameter Values:
+	#	init value		calibrated?
+	0	25.000000		true
+	Mean	25.0
+	Initial Parameter OF	104.91902217024308
+
+>>> Parameter Name: prospero_Th
+
+  mean  was used for calibration.
+  Lower Bound = 25.0		 Actual Lower Bound 25.0
+  Upper Bound = 45.0		 Actual Upper Bound 45.0
+
+  Parameter Values:
+	#	init value		calibrated?
+	0	50.000000		true
+	Mean	50.0
+	Initial Parameter OF	104.91902217024308
+
+>>> Parameter Name: prospero_alpha
+
+  mean  was used for calibration.
+  Lower Bound = 0.003		 Actual Lower Bound 0.0030000000000001137
+  Upper Bound = 0.007		 Actual Upper Bound 0.006999999999999673
+
+  Parameter Values:
+	#	init value		calibrated?
+	0	0.005000		true
+	Mean	0.005000000000000782
+	Initial Parameter OF	104.91902217024308
+
+>>> Parameter Name: prospero_theta
+
+  mean  was used for calibration.
+  Lower Bound = 0.7		 Actual Lower Bound 0.6999999999999975
+  Upper Bound = 0.9		 Actual Upper Bound 0.9000000000000004
+
+  Parameter Values:
+	#	init value		calibrated?
+	0	0.850000		true
+	Mean	0.8499999999999996
+	Initial Parameter OF	104.91902217024308
+
+>>> Parameter Name: prospero_waterWiltingPoint
+
+  mean  was used for calibration.
+  Lower Bound = 0.02		 Actual Lower Bound 0.019999999999999574
+  Upper Bound = 0.15		 Actual Upper Bound 0.15000000000000036
+
+  Parameter Values:
+	#	init value		calibrated?
+	0	0.110000		true
+	Mean	0.10999999999999943
+	Initial Parameter OF	104.91902217024308
+
+>>> Parameter Name: prospero_waterFieldCapacity
+
+  mean  was used for calibration.
+  Lower Bound = 0.16		 Actual Lower Bound 0.16000000000000014
+  Upper Bound = 0.35		 Actual Upper Bound 0.34999999999999964
+
+  Parameter Values:
+	#	init value		calibrated?
+	0	0.230000		true
+	Mean	0.23000000000000043
+	Initial Parameter OF	104.91902217024308
+
+>>> SCE Control Parameter Information
+	Number of complexes in the initial population: 2
+	Number of points in each complex: 17
+	Number of points in a sub-complex: 9
+	Number of evolution steps before shuffling: 17
+	Mininum number of complexes required: 1
+	Maximum number of model executions: 150
+	Shuffling loops in which the objective function value must change by given % before optimization is terminated: 5
+	Percentage for the objective function value: 0.01%
+
+>>> Objective Function (OF) Information
+	The number of objective functions: 1
+	-- OF #1 with weight = 1.0
+		The objective function is: MINIMIZED
+		Objective Function Type: rmse 
+		Time Step: raw
+		Period: Feb to Jan
+		Simulated Variable: value_1
+		Observed Variable: value_1
+
+
+
+********************************************
+ Calibrated Parameter Values
+********************************************
+
+
+-------------------------------
+Round 1 Step 1
+-------------------------------
+
+Objective Function Values for round 1 = 77.70374369098367
+>>> Parameter Name: prospero_VPD0
+
+Lower Bound = 2.0
+Upper Bound = 8.0
+
+Number of iterations in Step = 150
+Parameter Values:
+	#		Round 0 data
+	0		3.895197
+	Mean			3.8951968245227597
+>>> Parameter Name: prospero_Tl
+
+Lower Bound = -5.0
+Upper Bound = 5.0
+
+Number of iterations in Step = 150
+Parameter Values:
+	#		Round 0 data
+	0		-3.667691
+	Mean			-3.667690537091799
+>>> Parameter Name: prospero_T0
+
+Lower Bound = 12.0
+Upper Bound = 22.0
+
+Number of iterations in Step = 150
+Parameter Values:
+	#		Round 0 data
+	0		12.789336
+	Mean			12.789336271209528
+>>> Parameter Name: prospero_Th
+
+Lower Bound = 25.0
+Upper Bound = 45.0
+
+Number of iterations in Step = 150
+Parameter Values:
+	#		Round 0 data
+	0		39.367111
+	Mean			39.36711097411373
+>>> Parameter Name: prospero_alpha
+
+Lower Bound = 0.003
+Upper Bound = 0.007
+
+Number of iterations in Step = 150
+Parameter Values:
+	#		Round 0 data
+	0		0.006975
+	Mean			0.006974579814098547
+>>> Parameter Name: prospero_theta
+
+Lower Bound = 0.7
+Upper Bound = 0.9
+
+Number of iterations in Step = 150
+Parameter Values:
+	#		Round 0 data
+	0		0.726238
+	Mean			0.7262378658226254
+>>> Parameter Name: prospero_waterWiltingPoint
+
+Lower Bound = 0.02
+Upper Bound = 0.15
+
+Number of iterations in Step = 150
+Parameter Values:
+	#		Round 0 data
+	0		0.020036
+	Mean			0.020035717697211908
+>>> Parameter Name: prospero_waterFieldCapacity
+
+Lower Bound = 0.16
+Upper Bound = 0.35
+
+Number of iterations in Step = 150
+Parameter Values:
+	#		Round 0 data
+	0		0.330907
+	Mean			0.33090671410059613
+************************************************
+*  DONE.
+************************************************
+

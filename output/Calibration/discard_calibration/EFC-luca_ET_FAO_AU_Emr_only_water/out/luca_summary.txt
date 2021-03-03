@@ -1,0 +1,157 @@
+************************************************
+*          Luca Calibration Summary            *
+************************************************
+
+# Rounds = 1
+# Steps = 1
+
+Input Information
+	Model Executable: null
+	Parameter File Name = null
+	penmanMonteithFao.cropCoefficient = 0.75
+	penmanMonteithFao.waterWiltingPoint = 0.12
+	penmanMonteithFao.waterFieldCapacity = 0.27
+	penmanMonteithFao.rootsDepth = 0.75
+	penmanMonteithFao.depletionFraction = 0.60
+	penmanMonteithFao.tStartDate = 2012-01-01 00:00
+	penmanMonteithFao.temporalStep = 30
+	penmanMonteithFao.defaultAtmosphericPressure = 101.3
+	penmanMonteithFao.doHourly = true
+	penmanMonteithFao.canopyHeight = 0.2
+	readerAirTemperature.file = /home/drugo/simProspero/data/AU_Emr/AU_Emr_Temp.csv
+	readerAirTemperature.idfield = val
+	readerAirTemperature.tStart = 2012-01-01 00:00
+	readerAirTemperature.tEnd = 2012-12-31 23:30
+	readerAirTemperature.tTimestep = 30
+	readerAirTemperature.fileNovalue = -9999.0
+	readerWindVelocity.file = /home/drugo/simProspero/data/AU_Emr/AU_Emr_Wind.csv
+	readerWindVelocity.idfield = val
+	readerWindVelocity.tStart = 2012-01-01 00:00
+	readerWindVelocity.tEnd = 2012-12-31 23:30
+	readerWindVelocity.tTimestep = 30
+	readerWindVelocity.fileNovalue = -9999.0
+	readerRelativeHumidity.file = /home/drugo/simProspero/data/AU_Emr/AU_Emr_RH.csv
+	readerRelativeHumidity.idfield = val
+	readerRelativeHumidity.tStart = 2012-01-01 00:00
+	readerRelativeHumidity.tEnd = 2012-12-31 23:30
+	readerRelativeHumidity.tTimestep = 30
+	readerRelativeHumidity.fileNovalue = -9999.0
+	readerNetRadiation.file = /home/drugo/simProspero/data/AU_Emr/AU_Emr_Net.csv
+	readerNetRadiation.idfield = val
+	readerNetRadiation.tStart = 2012-01-01 00:00
+	readerNetRadiation.tEnd = 2012-12-31 23:30
+	readerNetRadiation.tTimestep = 30
+	readerNetRadiation.fileNovalue = -9999.0
+	readerAtmosphericPressure.file = /home/drugo/simProspero/data/AU_Emr/AU_Emr_Pres.csv
+	readerAtmosphericPressure.idfield = val
+	readerAtmosphericPressure.tStart = 2012-01-01 00:00
+	readerAtmosphericPressure.tEnd = 2012-12-31 23:30
+	readerAtmosphericPressure.tTimestep = 30
+	readerAtmosphericPressure.fileNovalue = -9999.0
+	readerSoilHeatFlux.file = /home/drugo/simProspero/data/AU_Emr/AU_Emr_GHF.csv
+	readerSoilHeatFlux.idfield = val
+	readerSoilHeatFlux.tStart = 2012-01-01 00:00
+	readerSoilHeatFlux.tEnd = 2012-12-31 23:30
+	readerSoilHeatFlux.tTimestep = 30
+	readerSoilHeatFlux.fileNovalue = -9999.0
+	readerSoilMosture.file = /home/drugo/simProspero/data/AU_Emr/AU_Emr_SWC.csv
+	readerSoilMosture.idfield = val
+	readerSoilMosture.tStart = 2012-01-01 00:00
+	readerSoilMosture.tEnd = 2012-12-31 23:30
+	readerSoilMosture.tTimestep = 30
+	readerSoilMosture.fileNovalue = -9999.0
+	writerLatentHeatFAO.file = /home/drugo/simProspero/output/AU_Emr_latentHeat_FAO_calib.csv
+	writerLatentHeatFAO.tStart = 2012-01-01 00:00
+	writerLatentHeatFAO.tTimestep = 30
+
+Model Run Period  : 	January 01,2012 - December 31,2012
+Calibration Period: 	January 01,2012 - December 31,2012
+
+
+Output Information
+	Output Folder: /home/drugo/simProspero/./output/Calibration/EFC-luca_ET_FAO_AU_Emr_only_water/out
+
+-------------------------------
+Initial Setup for Step 1
+-------------------------------
+
+>>> Parameter Name: penmanMonteithFao_waterWiltingPoint
+
+  mean  was used for calibration.
+  Lower Bound = 0.04		 Actual Lower Bound 0.03999999999999915
+  Upper Bound = 0.15		 Actual Upper Bound 0.15000000000000036
+
+  Parameter Values:
+	#	init value		calibrated?
+	0	0.120000		true
+	Mean	0.11999999999999922
+	Initial Parameter OF	70.16125017789555
+
+>>> Parameter Name: penmanMonteithFao_waterFieldCapacity
+
+  mean  was used for calibration.
+  Lower Bound = 0.16		 Actual Lower Bound 0.16000000000000014
+  Upper Bound = 0.4		 Actual Upper Bound 0.40000000000000036
+
+  Parameter Values:
+	#	init value		calibrated?
+	0	0.270000		true
+	Mean	0.2699999999999996
+	Initial Parameter OF	70.16125017789555
+
+>>> SCE Control Parameter Information
+	Number of complexes in the initial population: 2
+	Number of points in each complex: 5
+	Number of points in a sub-complex: 3
+	Number of evolution steps before shuffling: 5
+	Mininum number of complexes required: 1
+	Maximum number of model executions: 150
+	Shuffling loops in which the objective function value must change by given % before optimization is terminated: 5
+	Percentage for the objective function value: 0.01%
+
+>>> Objective Function (OF) Information
+	The number of objective functions: 1
+	-- OF #1 with weight = 1.0
+		The objective function is: MINIMIZED
+		Objective Function Type: rmse 
+		Time Step: raw
+		Period: Feb to Jan
+		Simulated Variable: value_1
+		Observed Variable: value_1
+
+
+
+********************************************
+ Calibrated Parameter Values
+********************************************
+
+
+-------------------------------
+Round 1 Step 1
+-------------------------------
+
+Objective Function Values for round 1 = 46.708386160604775
+>>> Parameter Name: penmanMonteithFao_waterWiltingPoint
+
+Lower Bound = 0.04
+Upper Bound = 0.15
+
+Number of iterations in Step = 80
+Parameter Values:
+	#		Round 0 data
+	0		0.040005
+	Mean			0.04000530403488156
+>>> Parameter Name: penmanMonteithFao_waterFieldCapacity
+
+Lower Bound = 0.16
+Upper Bound = 0.4
+
+Number of iterations in Step = 80
+Parameter Values:
+	#		Round 0 data
+	0		0.399482
+	Mean			0.3994818677568972
+************************************************
+*  DONE.
+************************************************
+

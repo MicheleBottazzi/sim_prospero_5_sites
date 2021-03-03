@@ -1,0 +1,114 @@
+************************************************
+*          Luca Calibration Summary            *
+************************************************
+
+# Rounds = 1
+# Steps = 1
+
+Input Information
+	Model Executable: null
+	Parameter File Name = null
+	priestleyTaylor.alpha = 1.26
+	priestleyTaylor.soilFluxParameterDay = 0.35
+	priestleyTaylor.soilFluxParameterNight = 0.75
+	priestleyTaylor.doHourly = true
+	priestleyTaylor.defaultAtmosphericPressure = 101.3
+	priestleyTaylor.temporalStep = 30
+	priestleyTaylor.tStartDate = 2000-02-18 00:00
+	readerAirTemperature.file = /home/drugo/simProspero/data/GL_Zah/GL_Zah_Temp.csv
+	readerAirTemperature.idfield = val
+	readerAirTemperature.tStart = 2000-02-18 00:00
+	readerAirTemperature.tEnd = 2004-12-31 23:30
+	readerAirTemperature.tTimestep = 30
+	readerAirTemperature.fileNovalue = -9999.0
+	readerNetRadiation.file = /home/drugo/simProspero/data/GL_Zah/GL_Zah_Net.csv
+	readerNetRadiation.idfield = val
+	readerNetRadiation.tStart = 2000-02-18 00:00
+	readerNetRadiation.tEnd = 2004-12-31 23:30
+	readerNetRadiation.tTimestep = 30
+	readerNetRadiation.fileNovalue = -9999.0
+	readerAtmosphericPressure.file = /home/drugo/simProspero/data/GL_Zah/GL_Zah_Pres.csv
+	readerAtmosphericPressure.idfield = val
+	readerAtmosphericPressure.tStart = 2000-02-18 00:00
+	readerAtmosphericPressure.tEnd = 2004-12-31 23:30
+	readerAtmosphericPressure.tTimestep = 30
+	readerAtmosphericPressure.fileNovalue = -9999.0
+	readerSoilHeatFlux.file = /home/drugo/simProspero/data/GL_Zah/GL_Zah_GHF.csv
+	readerSoilHeatFlux.idfield = val
+	readerSoilHeatFlux.tStart = 2000-02-18 00:00
+	readerSoilHeatFlux.tEnd = 2004-12-31 23:30
+	readerSoilHeatFlux.tTimestep = 30
+	readerSoilHeatFlux.fileNovalue = -9999.0
+	writerLatentHeatPT.file = /home/drugo/simProspero/output/GL_Zah/GL_Zah_latentHeat_PT_calib.csv
+	writerLatentHeatPT.tStart = 2000-02-18 00:00
+	writerLatentHeatPT.tTimestep = 30
+
+Model Run Period  : 	February 18,2000 - December 31,2004
+Calibration Period: 	February 18,2000 - December 31,2004
+
+
+Output Information
+	Output Folder: /home/drugo/simProspero/./output/Calibration/EFC-luca_ET_PT_GL_Zah/out
+
+-------------------------------
+Initial Setup for Step 1
+-------------------------------
+
+>>> Parameter Name: priestleyTaylor_alpha
+
+  mean  was used for calibration.
+  Lower Bound = 0.7		 Actual Lower Bound 0.6999999999999993
+  Upper Bound = 1.9		 Actual Upper Bound 1.9000000000000021
+
+  Parameter Values:
+	#	init value		calibrated?
+	0	1.260000		true
+	Mean	1.2599999999999998
+	Initial Parameter OF	34.501698223215236
+
+>>> SCE Control Parameter Information
+	Number of complexes in the initial population: 2
+	Number of points in each complex: 3
+	Number of points in a sub-complex: 2
+	Number of evolution steps before shuffling: 3
+	Mininum number of complexes required: 1
+	Maximum number of model executions: 150
+	Shuffling loops in which the objective function value must change by given % before optimization is terminated: 5
+	Percentage for the objective function value: 0.01%
+
+>>> Objective Function (OF) Information
+	The number of objective functions: 1
+	-- OF #1 with weight = 1.0
+		The objective function is: MINIMIZED
+		Objective Function Type: rmse 
+		Time Step: raw
+		Period: Feb to Jan
+		Simulated Variable: value_5
+		Observed Variable: value_5
+
+
+
+********************************************
+ Calibrated Parameter Values
+********************************************
+
+
+-------------------------------
+Round 1 Step 1
+-------------------------------
+
+Objective Function Values for round 1 = 34.28283008667029
+>>> Parameter Name: priestleyTaylor_alpha
+
+Lower Bound = 0.7
+Upper Bound = 1.9
+
+Number of iterations in Step = 40
+Parameter Values:
+	#		Round 0 data
+	0		1.899996
+	Mean			1.8999957328597077
+************************************************
+*  DONE.
+************************************************
+

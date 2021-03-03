@@ -1,0 +1,196 @@
+************************************************
+*          Luca Calibration Summary            *
+************************************************
+
+# Rounds = 1
+# Steps = 1
+
+Input Information
+	Model Executable: null
+	Parameter File Name = null
+	prospero.doHourly = true
+	prospero.doFullPrint = true
+	prospero.doIterative = false
+	prospero.useTemperatureStress = true
+	prospero.useVDPStress = true
+	prospero.useWaterStress = true
+	prospero.temporalStep = 30
+	prospero.tStartDate = 2012-01-01 00:00
+	prospero.defaultLeafAreaIndex = 0
+	prospero.typeOfCanopy = multilayer
+	prospero.elevation = 514.7
+	prospero.latitude = 50.62191
+	prospero.longitude = 6.30413
+	prospero.canopyHeight = 0.2
+	prospero.defaultStress = 1.0
+	prospero.alpha = 0.005
+	prospero.theta = 0.85
+	prospero.VPD0 = 5.0
+	prospero.Tl = 0.0
+	prospero.T0 = 25.0
+	prospero.Th = 50.0
+	prospero.waterWiltingPoint = 0.12
+	prospero.waterFieldCapacity = 0.27
+	prospero.rootsDepth = 0.75
+	prospero.depletionFraction = 0.60
+	readerAirTemperature.file = /home/drugo/simProspero/data/DE_Rur/DE_Rur_Temp.csv
+	readerAirTemperature.idfield = val
+	readerAirTemperature.tStart = 2012-01-01 00:00
+	readerAirTemperature.tEnd = 2012-12-31 23:30
+	readerAirTemperature.tTimestep = 30
+	readerAirTemperature.fileNovalue = -9999.0
+	readerWindVelocity.file = /home/drugo/simProspero/data/DE_Rur/DE_Rur_Wind.csv
+	readerWindVelocity.idfield = val
+	readerWindVelocity.tStart = 2012-01-01 00:00
+	readerWindVelocity.tEnd = 2012-12-31 23:30
+	readerWindVelocity.tTimestep = 30
+	readerWindVelocity.fileNovalue = -9999.0
+	readerRelativeHumidity.file = /home/drugo/simProspero/data/DE_Rur/DE_Rur_RH.csv
+	readerRelativeHumidity.idfield = val
+	readerRelativeHumidity.tStart = 2012-01-01 00:00
+	readerRelativeHumidity.tEnd = 2012-12-31 23:30
+	readerRelativeHumidity.tTimestep = 30
+	readerRelativeHumidity.fileNovalue = -9999.0
+	readerShortWaveDirectRadiation.file = /home/drugo/simProspero/data/DE_Rur/DE_Rur_SwDirect.csv
+	readerShortWaveDirectRadiation.idfield = val
+	readerShortWaveDirectRadiation.tStart = 2012-01-01 00:00
+	readerShortWaveDirectRadiation.tEnd = 2012-12-31 23:30
+	readerShortWaveDirectRadiation.tTimestep = 30
+	readerShortWaveDirectRadiation.fileNovalue = -9999.0
+	readerShortWaveDiffuseRadiation.file = /home/drugo/simProspero/data/DE_Rur/DE_Rur_null.csv
+	readerShortWaveDiffuseRadiation.idfield = val
+	readerShortWaveDiffuseRadiation.tStart = 2012-01-01 00:00
+	readerShortWaveDiffuseRadiation.tEnd = 2012-12-31 23:30
+	readerShortWaveDiffuseRadiation.tTimestep = 30
+	readerShortWaveDiffuseRadiation.fileNovalue = -9999.0
+	readerLongWaveRadiation.file = /home/drugo/simProspero/data/DE_Rur/DE_Rur_LwRad.csv
+	readerLongWaveRadiation.idfield = val
+	readerLongWaveRadiation.tStart = 2012-01-01 00:00
+	readerLongWaveRadiation.tEnd = 2012-12-31 23:30
+	readerLongWaveRadiation.tTimestep = 30
+	readerLongWaveRadiation.fileNovalue = -9999.0
+	readerNetLongWaveRadiation.file = /home/drugo/simProspero/data/DE_Rur/DE_Rur_Net.csv
+	readerNetLongWaveRadiation.idfield = val
+	readerNetLongWaveRadiation.tStart = 2012-01-01 00:00
+	readerNetLongWaveRadiation.tEnd = 2012-12-31 23:30
+	readerNetLongWaveRadiation.tTimestep = 30
+	readerNetLongWaveRadiation.fileNovalue = -9999.0
+	readerAtmosphericPressure.file = /home/drugo/simProspero/data/DE_Rur/DE_Rur_Pres.csv
+	readerAtmosphericPressure.idfield = val
+	readerAtmosphericPressure.tStart = 2012-01-01 00:00
+	readerAtmosphericPressure.tEnd = 2012-12-31 23:30
+	readerAtmosphericPressure.tTimestep = 30
+	readerAtmosphericPressure.fileNovalue = -9999.0
+	readerLeafAreaIndex.file = /home/drugo/simProspero/data/DE_Rur/DE_Rur_LAI.csv
+	readerLeafAreaIndex.idfield = val
+	readerLeafAreaIndex.tStart = 2012-01-01 00:00
+	readerLeafAreaIndex.tEnd = 2012-12-31 23:30
+	readerLeafAreaIndex.tTimestep = 30
+	readerLeafAreaIndex.fileNovalue = -9999.0
+	readerSoilMoisture.file = /home/drugo/simProspero/data/DE_Rur/DE_Rur_null.csv
+	readerSoilMoisture.idfield = val
+	readerSoilMoisture.tStart = 2012-01-01 00:00
+	readerSoilMoisture.tEnd = 2012-12-31 23:30
+	readerSoilMoisture.tTimestep = 30
+	readerSoilMoisture.fileNovalue = -9999.0
+	readerSoilHeatFlux.file = /home/drugo/simProspero/data/DE_Rur/DE_Rur_GHF.csv
+	readerSoilHeatFlux.idfield = val
+	readerSoilHeatFlux.tStart = 2012-01-01 00:00
+	readerSoilHeatFlux.tEnd = 2012-12-31 23:30
+	readerSoilHeatFlux.tTimestep = 30
+	readerSoilHeatFlux.fileNovalue = -9999.0
+	writerTranspiration.file = /home/drugo/simProspero/output/DE_Rur/prospero_DE_Rur_calib.csv
+	writerTranspiration.tStart = 2012-01-01 00:00
+	writerTranspiration.tTimestep = 30
+
+Model Run Period  : 	January 01,2012 - December 31,2012
+Calibration Period: 	January 01,2012 - December 31,2012
+
+
+Output Information
+	Output Folder: /home/drugo/simProspero/./output/Calibration/ET-SO_simple_stress_DE_Rur_RMSE_with_stress/out
+
+-------------------------------
+Initial Setup for Step 1
+-------------------------------
+
+>>> Parameter Name: prospero_waterWiltingPoint
+
+  mean  was used for calibration.
+  Lower Bound = 0.02		 Actual Lower Bound 0.019999999999999574
+  Upper Bound = 0.15		 Actual Upper Bound 0.15000000000000036
+
+  Parameter Values:
+	#	init value		calibrated?
+	0	0.120000		true
+	Mean	0.11999999999999922
+	Initial Parameter OF	38.17905689019073
+
+>>> Parameter Name: prospero_waterFieldCapacity
+
+  mean  was used for calibration.
+  Lower Bound = 0.16		 Actual Lower Bound 0.16000000000000014
+  Upper Bound = 0.4		 Actual Upper Bound 0.40000000000000036
+
+  Parameter Values:
+	#	init value		calibrated?
+	0	0.270000		true
+	Mean	0.2699999999999996
+	Initial Parameter OF	38.17905689019073
+
+>>> SCE Control Parameter Information
+	Number of complexes in the initial population: 2
+	Number of points in each complex: 5
+	Number of points in a sub-complex: 3
+	Number of evolution steps before shuffling: 5
+	Mininum number of complexes required: 1
+	Maximum number of model executions: 150
+	Shuffling loops in which the objective function value must change by given % before optimization is terminated: 5
+	Percentage for the objective function value: 0.01%
+
+>>> Objective Function (OF) Information
+	The number of objective functions: 1
+	-- OF #1 with weight = 1.0
+		The objective function is: MINIMIZED
+		Objective Function Type: rmse 
+		Time Step: raw
+		Period: Feb to Jan
+		Simulated Variable: value_2
+		Observed Variable: value_2
+
+
+
+********************************************
+ Calibrated Parameter Values
+********************************************
+
+
+-------------------------------
+Round 1 Step 1
+-------------------------------
+
+Objective Function Values for round 1 = 38.17905689019073
+>>> Parameter Name: prospero_waterWiltingPoint
+
+Lower Bound = 0.02
+Upper Bound = 0.15
+
+Number of iterations in Step = 119
+Parameter Values:
+	#		Round 0 data
+	0		0.120000
+	Mean			0.11999999999999922
+>>> Parameter Name: prospero_waterFieldCapacity
+
+Lower Bound = 0.16
+Upper Bound = 0.4
+
+Number of iterations in Step = 119
+Parameter Values:
+	#		Round 0 data
+	0		0.270000
+	Mean			0.2699999999999996
+************************************************
+*  DONE.
+************************************************
+

@@ -1,0 +1,75 @@
+@S,Parameter
+ round,1
+ step,1
+ step_params,priestleyTaylor_alpha
+ calibration_start,Tue Jan 01 00:00:00 CET 2008
+ luca_name,EFC-luca_ET_PT_IT_Tor
+
+@P,priestleyTaylor_alpha,0.9578330173217449
+
+@P,priestleyTaylor_soilFluxParameterDay,0.35
+
+@P,priestleyTaylor_soilFluxParameterNight,0.75
+
+@P,priestleyTaylor_doHourly,true
+
+@P,priestleyTaylor_defaultAtmosphericPressure,101.3
+
+@P,priestleyTaylor_temporalStep,30
+
+@P,priestleyTaylor_tStartDate,2008-01-01 00:00
+
+@P,readerAirTemperature_file,/home/drugo/simProspero/data/IT_Tor/IT_Tor_Temp.csv
+
+@P,readerAirTemperature_idfield,val
+
+@P,readerAirTemperature_tStart,2008-01-01 00:00
+
+@P,readerAirTemperature_tEnd,2010-12-31 23:30
+
+@P,readerAirTemperature_tTimestep,30
+
+@P,readerAirTemperature_fileNovalue,-9999.0
+
+@P,readerNetRadiation_file,/home/drugo/simProspero/data/IT_Tor/IT_Tor_Net.csv
+
+@P,readerNetRadiation_idfield,val
+
+@P,readerNetRadiation_tStart,2008-01-01 00:00
+
+@P,readerNetRadiation_tEnd,2010-12-31 23:30
+
+@P,readerNetRadiation_tTimestep,30
+
+@P,readerNetRadiation_fileNovalue,-9999.0
+
+@P,readerAtmosphericPressure_file,/home/drugo/simProspero/data/IT_Tor/IT_Tor_Pres.csv
+
+@P,readerAtmosphericPressure_idfield,val
+
+@P,readerAtmosphericPressure_tStart,2008-01-01 00:00
+
+@P,readerAtmosphericPressure_tEnd,2010-12-31 23:30
+
+@P,readerAtmosphericPressure_tTimestep,30
+
+@P,readerAtmosphericPressure_fileNovalue,-9999.0
+
+@P,readerSoilHeatFlux_file,/home/drugo/simProspero/data/IT_Tor/IT_Tor_GHF.csv
+
+@P,readerSoilHeatFlux_idfield,val
+
+@P,readerSoilHeatFlux_tStart,2008-01-01 00:00
+
+@P,readerSoilHeatFlux_tEnd,2010-12-31 23:30
+
+@P,readerSoilHeatFlux_tTimestep,30
+
+@P,readerSoilHeatFlux_fileNovalue,-9999.0
+
+@P,writerLatentHeatPT_file,/home/drugo/simProspero/output/IT_Tor/IT_Tor_latentHeat_PT_calib.csv
+
+@P,writerLatentHeatPT_tStart,2008-01-01 00:00
+
+@P,writerLatentHeatPT_tTimestep,30
+
