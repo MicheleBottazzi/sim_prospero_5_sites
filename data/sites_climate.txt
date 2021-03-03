@@ -1,0 +1,20 @@
+NEW DATASET:
+1)A: AU-DaS http://sites.fluxdata.org/AU-DaS/ Aw - Equatorial savannah with dry winter - no RH - 7 years (Duration: 2008 - 2014)
+A: AU-Dry http://sites.fluxdata.org/AU-Dry/ Aw - Equatorial savannah with dry winter - no RH - 7 years (Duration: 2008 - 2014)
+Beringer, J., Hutley, L. B., McHugh, I., Arndt, S. K., Campbell, D., Cleugh, H. A., … Wardlaw, T. (2016). An introduction to the Australian and New Zealand flux tower network – OzFlux. Biogeosciences, 13(21), 5895–5916. https://doi.org/10.5194/bg-13-5895-2016
+
+Beringer, J., McHugh, I., Hutley, L. B., Isaac, P., & Kljun, N. (2017). Technical note: Dynamic INtegrated Gap-filling and partitioning for OzFlux (DINGO). Biogeosciences, 14(6), 1457–1460. https://doi.org/10.5194/BG-14-1457-2017
+
+Isaac, P., Cleverly, J., McHugh, I., Gorsel, E. van, Ewenz, C., & Beringer, J. (2016). OzFlux Data: Network integration from collection to curation. Biogeosciences Discussions, 1–41. https://doi.org/10.5194/BG-2016-189
+-------------------------------------------
+2) B: US-Cop http://sites.fluxdata.org/US-Cop/ BSk - Arid Steppe cold- no RH - 7 years (Duration: 2001 - 2007)
+https://doi.org/10.1016/j.aeolia.2009.03.001
+-------------------------------------------
+3) C: US-Var http://sites.fluxdata.org/US-Var/ Csa - Warm temperate with dry, hot summer - no RH, no SWC
+https://www.sciencedirect.com/science/article/abs/pii/S016819230700189X
+-------------------------------------------
+4) D: IT-Tor http://sites.fluxdata.org/IT-Tor/ Dfc - Snow fully humid cool summer - 7 years (Duration: 2008 - 2014)
+https://iopscience.iop.org/article/10.1088/1748-9326/8/2/025008
+-------------------------------------------
+5) E: GL-ZaH http://sites.fluxdata.org/GL-ZaH/ ET - Polar tundra - 15 years (Duration: 2000 - 2014)
+https://lpdaacsvc.cr.usgs.gov/appeears/task/point

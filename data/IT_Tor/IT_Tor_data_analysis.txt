@@ -1,0 +1,212 @@
+#############
+Precipitation:
+#############
+Data:(122736, 2)
+Total nan before cleaning:0
+Fraction of nan before cleaning0.0
+the max2
+the min0
+Total data QC equal to 043856and %35.73197757789076
+Total data QC equal to 10and %0.0
+Total data QC equal to 278880and %64.26802242210924
+Total data QC equal to 30and %0.0
+Maximum value before cleaning:2
+Maximum value before cleaning:2.0
+Fraction of nan after cleaning:0.0
+#############
+Air temperature:
+#############
+Data:(122736, 2)
+Total nan before cleaning:7489
+Fraction of nan before cleaning6.101714248468257
+the max3.0
+the min0.0
+Total data QC equal to 0112340and %91.5297875114066
+Total data QC equal to 11403and %1.1431038977968975
+Total data QC equal to 2693and %0.5646265154477904
+Total data QC equal to 3811and %0.6607678268804589
+Maximum value before cleaning:3.0
+Maximum value before cleaning:2.0
+Fraction of nan after cleaning:6.762482075348716
+#############
+Net Radiation:
+#############
+Data:(122736, 1)
+Total nan before cleaning:21849
+Fraction of nan before cleaning:17.801622995698082
+#############
+Shortwave in:
+#############
+Data:(122736, 2)
+Total nan before cleaning:0
+Fraction of nan before cleaning:0.0
+the max3
+the min0
+Total data QC equal to 0111526and %90.8665754138965
+Total data QC equal to 11634and %1.331312736279494
+Total data QC equal to 25608and %4.569156563681397
+Total data QC equal to 33968and %3.232955286142615
+Maximum value before cleaning:3
+Maximum value before cleaning:2.0
+Fraction of nan after cleaning:3.232955286142615
+#############
+Shortwave out:
+#############
+Data:(122736, 1)
+Total nan before cleaning:10489
+Fraction of nan before cleaning:8.545984878112371
+Maximum value before cleaning:2.0
+Maximum value before cleaning:2.0
+Fraction of nan after cleaning:3.232955286142615
+#############
+Longwave:
+#############
+Data:(122736, 2)
+Total nan before cleaning:7489
+Fraction of nan6.101714248468257
+the max3.0
+the min0.0
+Total data QC equal to 0101205and %82.4574696910442
+Total data QC equal to 17600and %6.19215226176509
+Total data QC equal to 25593and %4.556935210533177
+Total data QC equal to 3849and %0.6917285881892843
+Maximum value before cleaning:3.0
+Maximum value before cleaning:2.0
+#############
+Pressure:
+#############
+Data:(122736, 2)
+Total nan before cleaning:0
+Fraction of nan0.0
+the max2
+the min0
+Total data QC equal to 0104413and %85.0712097510103
+Total data QC equal to 10and %0.0
+Total data QC equal to 218323and %14.928790248989701
+Total data QC equal to 30and %0.0
+Maximum value before cleaning:2
+Maximum value before cleaning:2.0
+#############
+Wind speed:
+#############
+Data:(122736, 2)
+Total nan before cleaning:0
+Fraction of nan0.0
+the max2
+the min0
+Total data QC equal to 0109661and %89.3470538391344
+Total data QC equal to 10and %0.0
+Total data QC equal to 213075and %10.652946160865598
+Total data QC equal to 30and %0.0
+Maximum value before cleaning:2
+Maximum value before cleaning:2.0
+#############
+Vapour pressure deficit:
+#############
+Data:(122736, 2)
+Total nan before cleaning:0
+Fraction of nan0.0
+the max2
+the min0
+Total data QC equal to 0112295and %91.49312345196194
+Total data QC equal to 11448and %1.1797679572415591
+Total data QC equal to 28993and %7.327108590796506
+Total data QC equal to 30and %0.0
+Maximum value before cleaning:2
+Maximum value before cleaning:2.0
+#############
+Ground heat flux:
+#############
+Data:(122736, 2)
+Total nan before cleaning:3887
+Fraction of nan3.166959979142224
+the max3.0
+the min0.0
+Total data QC equal to 0113300and %92.3119541128927
+Total data QC equal to 11063and %0.8660865597705645
+Total data QC equal to 2374and %0.30471907182896624
+Total data QC equal to 34112and %3.3502802763655324
+Maximum value before cleaning:3.0
+Maximum value before cleaning:2.0
+#############
+Latent heat:
+#############
+Data:(122736, 6)
+Total LE_F_MDS nan before cleaning:0
+Total LE_CORR nan before cleaning:0
+Total LE_CORR_25 nan before cleaning:7509
+Total LE_CORR_75 nan before cleaning:7509
+Total LE_RANDUNC nan before cleaning:7745
+Fraction of nan LE_F_MDS0.0
+Fraction of nan LE_CORR0.0
+Fraction of nan LE_CORR_256.118009385999218
+Fraction of nan LE_CORR_756.118009385999218
+the max3
+the min0
+Total data QC equal to 076701and %62.49266718811107
+Total data QC equal to 133726and %27.47849041845913
+Total data QC equal to 24195and %3.4179050971190197
+Total data QC equal to 38114and %6.610937296310781
+597.822
+1408.51
+577.568
+1740.42
+40.1549150720666956.8937909166054931.043150471583783.12366080185922Maximum value before cleaning:3
+Maximum value before cleaning:2.0
+#############
+Sensible heat:
+#############
+Data:(122736, 6)
+Total H_F_MDS nan before cleaning:0
+Total H_CORR nan before cleaning:0
+Total H_CORR_25 nan before cleaning:7509
+Total H_CORR_75 nan before cleaning:7509
+Total H_RANDUNC nan before cleaning:7728
+Fraction of nan H_F_MDS0.0
+Fraction of nan H_CORR0.0
+Fraction of nan H_CORR_256.118009385999218
+Fraction of nan H_CORR_756.118009385999218
+the max3
+the min0
+Total data QC equal to 093646and %76.29872246121758
+Total data QC equal to 119254and %15.687328901055924
+Total data QC equal to 21795and %1.4624885934037284
+Total data QC equal to 38041and %6.551460044322774
+Maximum value before cleaning:3
+Maximum value before cleaning:2.0
+#############
+Relative humidity:
+#############
+Data:(122736, 1)
+Total nan before cleaning:10398
+Fraction of nan8.4718420023465
+#############
+Soil water content 1:
+#############
+Data:(122736, 2)
+Total nan before cleaning:7488
+Fraction of nan6.100899491591709
+the max3.0
+the min0.0
+Total data QC equal to 0113301and %92.31276886976926
+Total data QC equal to 11062and %0.8652718028940164
+Total data QC equal to 2374and %0.30471907182896624
+Total data QC equal to 3511and %0.41634076391604746
+Maximum value before cleaning:3.0
+Maximum value before cleaning:2.0
+Fraction of nan after cleaning:6.517240255507756
+#############
+Soil water content 2:
+#############
+Data:(122736, 2)
+Total nan before cleaning:7488
+Fraction of nan6.100899491591709
+the max3.0
+the min0.0
+Total data QC equal to 0113304and %92.31521314039891
+Total data QC equal to 11059and %0.8628275322643724
+Total data QC equal to 2374and %0.30471907182896624
+Total data QC equal to 3511and %0.41634076391604746
+Maximum value before cleaning:3.0
+Maximum value before cleaning:2.0
+Fraction of nan after cleaning:6.517240255507756

@@ -1,0 +1,84 @@
+import static oms3.SimBuilder.instance as OMS3
+def home = oms_prj
+
+def ID = 5
+def startDate	=	"2000-02-18 00:00"
+def endDate		=	"2014-12-31 23:30"
+//def startDate	=	"2005-01-01 00:00"
+//def endDate		=	"2014-12-31 23:30"
+def site = "GL_Zah"
+
+def timestep = 30
+OMS3.sim {
+	resource "$oms_prj/lib"    
+	model(while:"readerAirTemperature.doProcess") {
+		components {
+			"readerAirTemperature"			"org.jgrasstools.gears.io.timedependent.OmsTimeSeriesIteratorReader"
+			"readerNetRadiation"            "org.jgrasstools.gears.io.timedependent.OmsTimeSeriesIteratorReader"
+			"readerAtmosphericPressure"     "org.jgrasstools.gears.io.timedependent.OmsTimeSeriesIteratorReader"
+			"readerSoilHeatFlux"          	"org.jgrasstools.gears.io.timedependent.OmsTimeSeriesIteratorReader"	
+			"priestleyTaylor"               "etpPointCase.OmsPriestleyTaylor"     
+			"writerLatentHeatPT"			"org.jgrasstools.gears.io.timedependent.OmsTimeSeriesIteratorWriter"      
+			"writerEvapotranspirationPT"	"org.jgrasstools.gears.io.timedependent.OmsTimeSeriesIteratorWriter"      			         
+			}  
+			parameter{        
+				
+				// PARAMETERS
+				"priestleyTaylor.alpha"						1.26
+		        "priestleyTaylor.soilFluxParameterDay"		0.35
+		        "priestleyTaylor.soilFluxParameterNight"	0.75
+        		"priestleyTaylor.doHourly"					true
+        		"priestleyTaylor.defaultAtmosphericPressure"101.3
+		        "priestleyTaylor.temporalStep"				"${timestep}"
+        		"priestleyTaylor.tStartDate"				"${startDate}"
+        		
+        		// READERS
+				"readerAirTemperature.file"					"${home}/data/${site}/${site}_Temp.csv"
+				"readerAirTemperature.idfield"      		"val"  
+				"readerAirTemperature.tStart"				"${startDate}"
+				"readerAirTemperature.tEnd"					"${endDate}"
+				"readerAirTemperature.tTimestep"			"${timestep}"
+				"readerAirTemperature.fileNovalue"			"-9999"        
+				
+				"readerNetRadiation.file"          			"${home}/data/${site}/${site}_Net.csv"
+				"readerNetRadiation.idfield"      			"val"
+				"readerNetRadiation.tStart"        			"${startDate}"
+				"readerNetRadiation.tEnd"					"${endDate}"
+				"readerNetRadiation.tTimestep"				"${timestep}"
+				"readerNetRadiation.fileNovalue"			"-9999"	
+			
+				"readerAtmosphericPressure.file"    		"${home}/data/${site}/${site}_Pres.csv"
+				"readerAtmosphericPressure.idfield"     	"val"  
+				"readerAtmosphericPressure.tStart"      	"${startDate}"
+				"readerAtmosphericPressure.tEnd"        	"${endDate}"
+				"readerAtmosphericPressure.tTimestep"   	"${timestep}"
+				"readerAtmosphericPressure.fileNovalue" 	"-9999.0"       
+				
+				"readerSoilHeatFlux.file"         			"${home}/data/${site}/${site}_GHF.csv" 
+				"readerSoilHeatFlux.idfield"      			"val"  
+				"readerSoilHeatFlux.tStart"       			"${startDate}"
+				"readerSoilHeatFlux.tEnd"         			"${endDate}"
+				"readerSoilHeatFlux.tTimestep"    			"${timestep}"
+				"readerSoilHeatFlux.fileNovalue"  			"-9999.0"                                                     
+			
+				// WRITERS
+				"writerLatentHeatPT.file"					"${home}/output/${site}/${site}_latentHeat_PT.csv" 
+				"writerLatentHeatPT.tStart"					"${startDate}"
+				"writerLatentHeatPT.tTimestep"				"${timestep}"
+				
+				/*"writerEvapotranspirationPT.file"			"${home}/output/${site}/${site}_ET_PT.csv" 
+				"writerEvapotranspirationPT.tStart"			"${startDate}"
+				"writerEvapotranspirationPT.tTimestep"		"${timestep}"*/
+				}
+				connect {                
+					"readerAirTemperature.outData"			"priestleyTaylor.inAirTemperature"
+					"readerNetRadiation.outData"			"priestleyTaylor.inNetRadiation"
+					"readerAtmosphericPressure.outData"		"priestleyTaylor.inAtmosphericPressure"	
+					"readerSoilHeatFlux.outData"			"priestleyTaylor.inSoilFlux"	
+					"priestleyTaylor.outLatentHeatPt"		"writerLatentHeatPT.inData"
+					//"priestleyTaylor.outEvapotranspirationPt""writerEvapotranspirationPT.inData"
+					}					
+			}
+	}
+
+

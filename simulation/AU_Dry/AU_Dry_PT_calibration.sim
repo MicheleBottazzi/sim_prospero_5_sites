@@ -1,0 +1,104 @@
+import static oms3.SimBuilder.instance as OMS3
+import static oms3.SimBuilder.*
+
+def home = oms_prj
+def ID = 1
+def startDate	=	"2012-01-01 00:00"
+def endDate		=	"2014-12-31 23:30"
+//def startDate	=	"2011-01-01 00:00"
+//def endDate		=	"2013-12-31 23:30"
+def site = "AU_Dry"
+
+
+def timestep = 30
+luca = OMS3.luca_run(name:"EFC-luca_ET_PT_${site}",	 {
+		outputstrategy(dir: "./output/Calibration/", scheme:SIMPLE)
+		model(while:"readerAirTemperature.doProcess") {
+			components {
+			"readerAirTemperature"								"org.jgrasstools.gears.io.timedependent.OmsTimeSeriesIteratorReader"
+			"readerNetRadiation"								"org.jgrasstools.gears.io.timedependent.OmsTimeSeriesIteratorReader"
+			"readerAtmosphericPressure"		 					"org.jgrasstools.gears.io.timedependent.OmsTimeSeriesIteratorReader"
+			"readerSoilHeatFlux"								"org.jgrasstools.gears.io.timedependent.OmsTimeSeriesIteratorReader"	
+			"priestleyTaylor"			 						"etpPointCase.OmsPriestleyTaylor"		 
+			"writerLatentHeatPT"								"org.jgrasstools.gears.io.timedependent.OmsTimeSeriesIteratorWriter"	
+			"writerEvapotranspirationPT"						"org.jgrasstools.gears.io.timedependent.OmsTimeSeriesIteratorWriter"	 
+			}
+			parameter{
+				// PARAMETERS
+				"priestleyTaylor.alpha"							1.26
+				"priestleyTaylor.soilFluxParameterDay"			0.35
+				"priestleyTaylor.soilFluxParameterNight"		0.75
+				"priestleyTaylor.doHourly"						true
+				"priestleyTaylor.defaultAtmosphericPressure"	101.3
+				"priestleyTaylor.temporalStep"					"${timestep}"
+				"priestleyTaylor.tStartDate"					"${startDate}"
+				
+				// READERS
+				"readerAirTemperature.file"						"${home}/data/${site}/${site}_Temp.csv"
+				"readerAirTemperature.idfield"					"val"	
+				"readerAirTemperature.tStart"					"${startDate}"
+				"readerAirTemperature.tEnd"						"${endDate}"
+				"readerAirTemperature.tTimestep"				"${timestep}"
+				"readerAirTemperature.fileNovalue"				"-9999.0"		
+				
+				"readerNetRadiation.file"						"${home}/data/${site}/${site}_Net.csv"
+				"readerNetRadiation.idfield"					"val"
+				"readerNetRadiation.tStart"						"${startDate}"
+				"readerNetRadiation.tEnd"						"${endDate}"
+				"readerNetRadiation.tTimestep"					"${timestep}"
+				"readerNetRadiation.fileNovalue"				"-9999.0"	
+			
+				"readerAtmosphericPressure.file"				"${home}/data/${site}/${site}_Pres.csv"
+				"readerAtmosphericPressure.idfield"				"val"	
+				"readerAtmosphericPressure.tStart"				"${startDate}"
+				"readerAtmosphericPressure.tEnd"				"${endDate}"
+				"readerAtmosphericPressure.tTimestep"		 	"${timestep}"
+				"readerAtmosphericPressure.fileNovalue"	 		"-9999.0"	 
+				
+				"readerSoilHeatFlux.file"			 			"${home}/data/${site}/${site}_GHF.csv" 
+				"readerSoilHeatFlux.idfield"					"val"	
+				"readerSoilHeatFlux.tStart"		 				"${startDate}"
+				"readerSoilHeatFlux.tEnd"			 			"${endDate}"
+				"readerSoilHeatFlux.tTimestep"					"${timestep}"
+				"readerSoilHeatFlux.fileNovalue"				"-9999.0"										 
+			
+				// WRITERS
+			//	"writerTranspiration.file"        			"${home}/output/${site}/prospero_${site}_calib.csv" // ET [mm]
+				"writerLatentHeatPT.file"						"${home}/output/${site}/${site}_latentHeat_PT_calib.csv" 
+				"writerLatentHeatPT.tStart"						"${startDate}"
+				"writerLatentHeatPT.tTimestep"					"${timestep}"
+				
+			/*	"writerEvapotranspirationPT.file"				"${home}/output/${site}/${site}_ET_PT.csv" 
+				"writerEvapotranspirationPT.tStart"				"${startDate}"
+				"writerEvapotranspirationPT.tTimestep"			"${timestep}"*/
+			}
+			connect {
+				"readerAirTemperature.outData"					"priestleyTaylor.inAirTemperature"
+				"readerNetRadiation.outData"					"priestleyTaylor.inNetRadiation"
+				"readerAtmosphericPressure.outData"				"priestleyTaylor.inAtmosphericPressure"	
+				"readerSoilHeatFlux.outData"					"priestleyTaylor.inSoilFlux"	
+				"priestleyTaylor.outLatentHeatPt"				"writerLatentHeatPT.inData"
+				//"priestleyTaylor.outEvapotranspirationPt" 		"writerEvapotranspirationPT.inData"
+				}
+			}
+		
+		rounds 1
+				run_start								        "2012-01-01 00:00"
+				calibration_start								"2012-01-01 00:00"
+				run_end											"2014-12-31 23:30"
+
+		// step definitions
+		step {
+		parameter {
+				"priestleyTaylor_alpha"				(lower:0.7, upper:1.9,calib_strategy:MEAN)
+		}
+		objfunc(method:RMSE, timestep:RAW,invalidDataValue:-9999.0) {
+		sim(file:"${home}/output/${site}/${site}_latentHeat_PT_calib.csv", table:"table", column:"value_${ID}")
+		obs(file:"$oms_prj/data/${site}/${site}_ElCorr_cal.csv", table:"table", column:"value_${ID}")
+		}
+
+max_exec 150
+		}})
+
+
+
