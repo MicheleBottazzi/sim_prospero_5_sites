@@ -1,32 +1,30 @@
 
 ######### AU_Dry ######### 
 
-EFC-luca_ET_FAO_AU_Dry_only_water/out/luca_summary.txt:Objective Function Values for round 1 = 103.86099903857657
-EFC-luca_ET_PT_AU_Dry/out/luca_summary.txt:Objective Function Values for round 1 = 75.37626547587182
-ET-SO_simple_stress_AU_Dry_onlywater/out/luca_summary.txt:Objective Function Values for round 1 = 94.02251134106358
-ET-SO_simple_stress_AU_Dry/out/luca_summary.txt:Objective Function Values for round 1 = 95.98262913307468
+EFC-luca_ET_AU_Dry_FAO/out/luca_summary.txt:Objective Function Values for round 1 = 103.86099903857657
+EFC-luca_ET_AU_Dry_PS/out/luca_summary.txt:Objective Function Values for round 1 = 77.70374369098367
+EFC-luca_ET_AU_Dry_PT/out/luca_summary.txt:Objective Function Values for round 1 = 75.37626547587182
 
 ######### US_Cop ######### 
 
-EFC-luca_ET_FAO_US_Cop/out/luca_summary.txt:Objective Function Values for round 1 = 37.245688244831165
-EFC-luca_ET_PT_US_Cop/out/luca_summary.txt:Objective Function Values for round 1 = 42.69793576210682
-ET-SO_simple_stress_US_Cop_RMSE_Water/out/luca_summary.txt:Objective Function Values for round 1 = 31.144875514960237
+EFC-luca_ET_US_Cop_FAO/out/luca_summary.txt:Objective Function Values for round 1 = 37.245688244831165
+EFC-luca_ET_US_Cop_PS/out/luca_summary.txt:Objective Function Values for round 1 = 31.144875514960237
+EFC-luca_ET_US_Cop_PT/out/luca_summary.txt:Objective Function Values for round 1 = 42.69793576210682
 
 ######### US_Var ######### 
 
-EFC-luca_ET_FAO_US_Var_ElCorr/out/luca_summary.txt:Objective Function Values for round 1 = 39.87526592060037
-EFC-luca_ET_PT_US_Var/out/luca_summary.txt:Objective Function Values for round 1 = 68.10554123624688
-ET-SO_simple_stress_US_Var_RMSE_half/out/luca_summary.txt:Objective Function Values for round 1 = 31.526505049794608
-ET-SO_simple_stress_US_Var_RMSE_half_with_stress/out/luca_summary.txt:Objective Function Values for round 1 = 30.30186604778372
+EFC-luca_ET_US_Var_FAO/out/luca_summary.txt:Objective Function Values for round 1 = 39.87526592060037
+EFC-luca_ET_US_Var_PS/out/luca_summary.txt:Objective Function Values for round 1 = 31.526505049794608
+EFC-luca_ET_US_Var_PT/out/luca_summary.txt:Objective Function Values for round 1 = 68.10554123624688
 
 ######### IT_Tor ######### 
 
-EFC-luca_ET_FAO_IT_Tor/out/luca_summary.txt:Objective Function Values for round 1 = 44.97906330771536
-EFC-luca_ET_PT_IT_Tor/out/luca_summary.txt:Objective Function Values for round 1 = 38.36526068193925
-ET-SO_simple_stress_IT_Tor/out/luca_summary.txt:Objective Function Values for round 1 = 40.423523361615416
+EFC-luca_ET_IT_Tor_FAO/out/luca_summary.txt:Objective Function Values for round 1 = 44.97906330771536
+EFC-luca_ET_IT_Tor_PS/out/luca_summary.txt:Objective Function Values for round 1 = 40.423523361615416
+EFC-luca_ET_IT_Tor_PT/out/luca_summary.txt:Objective Function Values for round 1 = 38.36526068193925
 
 ######### GL_Zah ######### 
 
-EFC-luca_ET_FAO_GL_Zah/out/luca_summary.txt:Objective Function Values for round 1 = 29.2564569650559
-EFC-luca_ET_PT_GL_Zah/out/luca_summary.txt:Objective Function Values for round 1 = 34.28283008667029
-ET-SO_simple_stress_GL_Zah_RMSE/out/luca_summary.txt:Objective Function Values for round 1 = 23.32114228538404
+EFC-luca_ET_GL_Zah_FAO/out/luca_summary.txt:Objective Function Values for round 1 = 29.2564569650559
+EFC-luca_ET_GL_Zah_PS/out/luca_summary.txt:Objective Function Values for round 1 = 23.32114228538404
+EFC-luca_ET_GL_Zah_PT/out/luca_summary.txt:Objective Function Values for round 1 = 34.28283008667029
