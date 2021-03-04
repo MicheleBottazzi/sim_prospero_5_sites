@@ -17,32 +17,32 @@ import matplotlib.pyplot as plt
 import goodness_of_fit as gof
 
 #def_site = "AU_Dry"
-def_site = "US_Cop"
+#def_site = "US_Cop"
 #def_site = "US_Var"
 #def_site = "IT_Tor"
-#def_site = "GL_Zah"
+def_site = "GL_Zah"
 
 
 #index = pd.date_range('2008-01-01 00:00', '2014-12-31 23:30', freq='30T')
-index = pd.date_range('2001-01-01 00:00', '2007-12-31 23:00', freq='60T')
+#index = pd.date_range('2001-01-01 00:00', '2007-12-31 23:00', freq='60T')
 #index = pd.date_range('2000-01-01 00:00', '2014-12-31 23:30', freq='30T')
 #index = pd.date_range('2008-01-01 00:00', '2014-12-31 23:30', freq='30T')
-#index = pd.date_range('2000-01-01 00:00', '2014-12-31 23:30', freq='30T')
+index = pd.date_range('2000-01-01 00:00', '2014-12-31 23:30', freq='30T')
 
 
-#df = pd.read_csv('/home/drugo/simProspero/data/'+def_site+'/'+def_site+'_El.csv', na_values=-9999, parse_dates=[1], index_col=[1], skiprows=2)
-df = pd.read_csv('/home/drugo/simProspero/data/'+def_site+'/'+def_site+'_ElCorr.csv', na_values=-9999, parse_dates=[1], index_col=[1], skiprows=2)
+#df = pd.read_csv('/home/drugo/sim_prospero_5_sites/data/'+def_site+'/'+def_site+'_El.csv', na_values=-9999, parse_dates=[1], index_col=[1], skiprows=2)
+df = pd.read_csv('/home/drugo/sim_prospero_5_sites/data/'+def_site+'/'+def_site+'_ElCorr.csv', na_values=-9999, parse_dates=[1], index_col=[1], skiprows=2)
 
-df1 = pd.read_csv('/home/drugo/simProspero/output/'+def_site+'/prospero_'+def_site+'_validato2.csv', na_values=-9999, parse_dates=[1], index_col=[1], skiprows=6)
-df2 = pd.read_csv('/home/drugo/simProspero/output/'+def_site+'/prospero_'+def_site+'_calibrato2.csv', na_values=-9999, parse_dates=[1], index_col=[1], skiprows=6)
+df1 = pd.read_csv('/home/drugo/sim_prospero_5_sites/output/'+def_site+'/prospero_'+def_site+'_validato.csv', na_values=-9999, parse_dates=[1], index_col=[1], skiprows=6)
+df2 = pd.read_csv('/home/drugo/sim_prospero_5_sites/output/'+def_site+'/prospero_'+def_site+'_calibrato.csv', na_values=-9999, parse_dates=[1], index_col=[1], skiprows=6)
 
-df4 = pd.read_csv('/home/drugo/simProspero/output/'+def_site+'/'+def_site+'_latentHeat_FAO_validato.csv', na_values=-9999, parse_dates=[1], index_col=[1], skiprows=6)
-df5 = pd.read_csv('/home/drugo/simProspero/output/'+def_site+'/'+def_site+'_latentHeat_FAO_calibrato.csv', na_values=-9999, parse_dates=[1], index_col=[1], skiprows=6)
+df4 = pd.read_csv('/home/drugo/sim_prospero_5_sites/output/'+def_site+'/'+def_site+'_latentHeat_FAO_validato.csv', na_values=-9999, parse_dates=[1], index_col=[1], skiprows=6)
+df5 = pd.read_csv('/home/drugo/sim_prospero_5_sites/output/'+def_site+'/'+def_site+'_latentHeat_FAO_calibrato.csv', na_values=-9999, parse_dates=[1], index_col=[1], skiprows=6)
 
-df7 = pd.read_csv('/home/drugo/simProspero/output/'+def_site+'/'+def_site+'_latentHeat_PT_validato.csv', na_values=-9999, parse_dates=[1], index_col=[1], skiprows=6)
-df8 = pd.read_csv('/home/drugo/simProspero/output/'+def_site+'/'+def_site+'_latentHeat_PT_calibrato.csv', na_values=-9999, parse_dates=[1], index_col=[1], skiprows=6)
+df7 = pd.read_csv('/home/drugo/sim_prospero_5_sites/output/'+def_site+'/'+def_site+'_latentHeat_PT_validato.csv', na_values=-9999, parse_dates=[1], index_col=[1], skiprows=6)
+df8 = pd.read_csv('/home/drugo/sim_prospero_5_sites/output/'+def_site+'/'+def_site+'_latentHeat_PT_calibrato.csv', na_values=-9999, parse_dates=[1], index_col=[1], skiprows=6)
 
-df10 = pd.read_csv('/home/drugo/simProspero/data/'+def_site+'/'+def_site+'_PRP.csv', na_values=-9999, parse_dates=[1], index_col=[1], skiprows=2)
+df10 = pd.read_csv('/home/drugo/sim_prospero_5_sites/data/'+def_site+'/'+def_site+'_PRP.csv', na_values=-9999, parse_dates=[1], index_col=[1], skiprows=2)
 
 df3 = pd.concat([df1,df2],axis=0)
 df6 = pd.concat([df4,df5],axis=0)

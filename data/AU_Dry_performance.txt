@@ -1,0 +1,122 @@
+#######################
+######   HOURLY  ######
+#######################
+RMSE ps validated:          81.80933633629073
+RMSE ps calibrated:         83.20857678099311
+RMSE ps:                    102.00041799848125
+
+RMSE fao validated:         93.78398098165188
+RMSE fao calibrated:        103.59597614865247
+RMSE fao:                   117.52835696080588
+
+RMSE pt validated:          68.80473127222882
+RMSE pt calibrated:         73.73290014160247
+RMSE pt:                    150.71116536827586
+
+#######################
+ 
+MAE ps validated:           44.92952415857112
+MAE ps calibrated:          45.969999408484185
+MAE ps:                     56.023400735802454
+
+MAE fao validated:          54.01777170520555
+MAE fao calibrated:         58.72875100139676
+MAE fao :                   67.23538143798284
+
+MAE pt validated:           39.01490215977902
+MAE pt calibrated:          42.81882753975689
+MAE pt:                     84.90100667063307
+
+#######################
+ 
+R^{2} ps validated:         0.7405370171670356
+R^{2} ps calibrated:        0.7586698224049937
+R^{2} ps:                   0.565788973159775
+
+R^{2} fao validated:        0.6246168103346973
+R^{2} fao calibrated:       0.6384684083129183
+R^{2} fao:                  0.4493848114281618
+
+R^{2} pt validated:         0.7880353016860825
+R^{2} pt calibrated:        0.7994480649701551
+R^{2} pt:                   0.7941176381786195
+
+#######################
+ 
+index d ps validated:       0.8461214403962108
+index d ps calibrated:      0.855424503561065
+index d ps:                 0.6863220849448379
+
+index d fao validated:      0.7348482120801754
+index d fao calibrated:     0.7324240220498706
+index d fao:                0.5534772517900683
+
+index d pt validated:       0.8820167389302684
+index d pt calibrated:      0.8909994234638673
+index d pt:                 0.7595740198560827
+
+#######################
+ 
+#######################
+######   DAILY   ######
+#######################
+ 
+RMSE ps validated:          2.058824671598325
+RMSE ps calibrated:         1.9194374449673022
+RMSE ps:                    1.866038416853156
+
+RMSE fao validated:         2.2512816987148137
+RMSE fao calibrated:        2.176768334263238
+RMSE fao:                   2.2458734338218878
+
+RMSE pt calibrated:         2.0595369639024477
+RMSE pt calibrated:         1.8871837271290086
+RMSE pt:                    2.3309042994902938
+
+#######################
+ 
+MAE ps validated:           1.4412487784955197
+MAE ps calibrated:          1.3504769619374328
+MAE ps:                     1.3624127873844498
+
+MAE fao validated:          1.691268075288579
+MAE fao calibrated:         1.6330066995826762
+MAE fao:                    1.7548256395618926
+
+MAE pt validated:           1.3863464942373505
+MAE pt calibrated:          1.3195980954221018
+MAE pt:                     1.7621483853129436
+
+#######################
+ 
+R^{2} ps validated:         0.3958317578713465
+R^{2} ps calibrated:        0.5437784579566796
+R^{2} ps:                   0.508709394965264
+
+R^{2} fao validated:        0.33665448661547137
+R^{2} fao calibrated:       0.4623151424067097
+R^{2} fao:                  0.3590183132282746
+
+R^{2} pt validated:         0.2817071959505946
+R^{2} pt calibrated:        0.4563660677184857
+R^{2} pt:                   0.736340074617949
+
+#######################
+ 
+index d ps validated:       0.6235412586959552
+index d ps calibrated:      0.6735316737119859
+index d ps:                 0.6523908107604035
+
+index d fao validated:      0.5381451468178176
+index d fao calibrated:     0.5848273412445604
+index d fao:                0.5136685654292482
+
+index d pt validated:       0.584470631338937
+index d pt calibrated:      0.6640617620323963
+index d pt:                 0.7275806279122388
+
+#######################
+ 
+
+#######################
+ 
